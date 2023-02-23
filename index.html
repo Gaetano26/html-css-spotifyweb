@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,47 +12,89 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <main class="flex">
             <nav class="main-nav">
-                <div class="logo1">
-                    <img src="./img/logo.svg" alt="logo1">
-                </div>
-                <div class="logo2">
-                    <img src="./img/logo-small.svg" alt="logo2">
-                </div>
-                <div class="main-list">
-                    <ul>
-                        <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
-                        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
-                        <li> <a href=""><img class="img1" src="./img/libreria.svg" alt="libreria">La tua Libreria</a></li>
-                    </ul>
-                </div>
-                <div class="main-list">
-                    <h5 class="t-list">Playlist</h5>
-                    <ul>
-                        <li><a href=""><i class="plus fa-solid fa-square-plus">Crea Playlist</i></a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        
-                    </ul>
-                </div>
+                <div class="top-nav">
+                    <div class="logo1">
+                        <img src="./img/logo.svg" alt="logo1">
+                    </div>
+                    <div class="logo2">
+                        <img src="./img/logo-small.svg" alt="logo2">
+                    </div>
+                    <div class="main-list">
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i><span>Cerca</span></a></li>
+                            <li> <a href=""><img class="img1" src="./img/libreria.svg" alt="libreria"><span>La tua
+                                        Libreria</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-list playlist">
+                        <h5 class="t-list ">Playlist</h5>
+                        <ul>
+                            <li>
+                                <div class="flex ">
+                                    <div>
+                                        <a href=""><i class="fa-solid fa-square-plus"></i></a>
+                                    </div>
+                                    <div>
+                                        <p>Crea playlist</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
 
+                        </ul>
 
+                    </div>
+                   
+
+                    
+                </div>
+                <div class="bottom-nav">
+                        <ul>
+                            <li class="flex bord-bot">
+                                <div>
+                                    <img src="./img/download.svg" alt="">
+                                     
+                                </div>
+                                <div>
+                                    <p>Installa app</p>
+
+                                </div>
+
+                            </li>
+                            <li class="flex">
+                                <div class="pad-10">
+                                    <img class="img-grey" src="./img/profile.svg" alt="" srcset="">
+
+                                </div>
+                                <div>
+                                  <h5 class="pad-15">John Doe</h5>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                </div>
             </nav>
-            <section class="main-content" >
+            <section class="main-content">
                 <div id="upgrade" class="flex end center">
-                    <a href="#" class="btn up-text">Effettua L'upgrade</a>
+                    <a href="#" class="btn up-text scale">Effettua L'upgrade</a>
                 </div>
                 <div class="main-section">
                     <nav>
-                        <ul class="flex just-center">
+                        <ul class="flex just-center wrap">
                             <li><a href="">In evidenza</a></li>
                             <li><a href="">Podcast</a></li>
                             <li><a href="">Classifiche</a></li>
@@ -63,18 +106,21 @@
                     </nav>
                     <section class="container">
                         <h2>Recently Played</h2>
-                        <div class="row flex">
+                        <div class="row flex wrap">
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/metal_lifting.jpg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
                                     <h5>Heavy Metal</h5>
                                     <p>subtitle</p>
                                 </div>
+
                             </div>
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/stranger.jpeg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
@@ -84,7 +130,8 @@
 
                             </div>
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/aquietplace.jpeg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
@@ -94,7 +141,8 @@
 
                             </div>
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/split.jpeg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
@@ -104,7 +152,8 @@
 
                             </div>
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/cure.jpeg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
@@ -113,67 +162,76 @@
                                 </div>
 
                             </div>
+
                             <div class="col">
-                                <div>
+
+                                <div class="hover-img">
                                     <img src="./img/sinister.jpeg" alt="metal">
                                 </div>
                                 <div class="text-c marg-top">
                                     <h5>Sinister</h5>
                                     <p>subtitle</p>
                                 </div>
+
                             </div>
                         </div>
-                    </section>
-                    <section class="container">
-                        <h2>Creato per John Doe</h2>
-                        <p>Piu ascolti, piu accurati saranno i suggerimenti.</p>
-                        <div class="row flex">
-                            <div class="col">
-                                <div>
-                                    <img src="./img/radar.jpeg" alt="radar">
-                                </div>
-                                <div class="text-c marg-top">
-                                    <h5>Relase Radar</h5>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <img src="./img/mixdaily.jpeg" alt="daily">
-                                </div>
-                                <div class="text-c marg-top">
-                                    <h5>Daily Mix 1</h5>
-                                </div>
-                        </div>
-
-                    </section>
-                    <section class="container">
-                        <h2>Artisti piu Popolari</h2>
-                        <p>Piu ascolti, piu accurati saranno i suggerimenti.</p>
-                        <div class="row flex">
-                            <div class="col">
-                                <div class="box">
-                                    <img src="./img/youg.jpeg" alt="lana">
-                                </div>
-                                <div class="text-c marg-top">
-                                    <h5>Lana del Rey</h5>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="box">
-                                    <img src="./img/einaudi.jpeg" alt="daily">
-                                </div>
-                                <div class="text-c marg-top">
-                                    <h5>Ludovico Einaudi</h5>
-                                </div>
-
                     </section>
                 </div>
+
+                <section class="container">
+                    <h2>Creato per John Doe</h2>
+                    <p>Piu ascolti, piu accurati saranno i suggerimenti.</p>
+                    <div class="row flex wrap">
+                        <div class="col">
+                            <div class="hover-img">
+                                <img src="./img/radar.jpeg" alt="radar">
+                            </div>
+                            <div class="text-c marg-top">
+                                <h5>Relase Radar</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="hover-img">
+                                <img src="./img/mixdaily.jpeg" alt="daily">
+                            </div>
+                            <div class="text-c marg-top">
+                                <h5>Daily Mix 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <h2>Artisti piu Popolari</h2>
+                    <p>Piu ascolti, piu accurati saranno i suggerimenti.</p>
+                    <div class="row flex wrap">
+                        <div class="col">
+                            <div class="box hover-img">
+                                <img src="./img/youg.jpeg" alt="lana">
+                            </div>
+                            <div class="text-c marg-top">
+                                <h5>Lana del Rey</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="box hover-img">
+                                <img src="./img/einaudi.jpeg" alt="daily">
+                            </div>
+                            <div class="text-c marg-top">
+                                <h5>Ludovico Einaudi</h5>
+                            </div>
+
+                </section>
             </section>
 
 
         </main>
         <div id="playbar"></div>
+
     </div>
-    
+
+
+
+
 </body>
+
 </html>
