@@ -100,7 +100,7 @@
                             <li><a href="">Classifiche</a></li>
                             <li><a href="">Generi e mood</a></li>
                             <li><a href="">Nuove uscite</a></li>
-                            <li><a href="">scopri</a></li>
+                            <li><a  href="">scopri</a></li>
 
                         </ul>
                     </nav>
@@ -225,7 +225,54 @@
 
 
         </main>
-        <div id="playbar"></div>
+        <div id="playbar" class="flex space-between">
+            <div class="play-left flex">
+                <div class="col-play">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                </div>
+                <div class="col-play">
+                    <h5 class="marg-top">Sinister</h5>
+                    <p>Brano</p>
+                </div>
+                <div class="col-play flex">
+                    <span><i class="marg-15 fa-regular fa-heart"></i></span>
+                    <span><i class="pad-l marg-15 fa-regular fa-folder"></i></span>
+                </div>
+
+            </div>
+            <div class="play-middle">
+                <div class="marg-20">
+                    <ul class="flex just-center">
+                        <li><a  href=""><i class="scale pad-play fa-solid fa-shuffle"></i></a></li>
+                        <li><a  href=""><i class="scale pad-play fa-solid fa-backward-step"></i></a></li>
+                        <li><a href=""><i class="scale play fa-regular fa-circle-play"></i></a></li>
+                        <li><a href=""><i class="scale pad-play fa-solid fa-forward-step"></i></a></i></li>
+                        <li><a  href=""><i class="scale pad-play fa-solid fa-arrow-rotate-right"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="flex just-center pad-l">
+                   <p class="pad-mmin">0:25</p>
+                   <input class="marg-15" type="range">
+                   <p class="pad-mmax">4:24</p>
+                </div>
+               
+               
+
+            </div>
+            <div class="play-right flex">
+                <div class="flex">
+                    <span><i class="marg-40 fa-solid fa-bars"></i></span>
+                    <span><i class="marg-40 pad-l fa-solid fa-desktop"></i></span>
+                    <span><i class="marg-40 pad-l fa-solid fa-volume-high"></i></span>
+                </div>
+                <div class="flex just-center">
+                  <input class="marg-45" type="range">
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
