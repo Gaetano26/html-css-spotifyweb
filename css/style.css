@@ -1,9 +1,11 @@
+/*generali*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Root colori*/
 :root {
     --dark-color: #141922;
     --dark-grey: #282828;
@@ -14,16 +16,19 @@
     --highlight: #adff2f;
 }
 
+/*Smooth scroll*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Font pagina*/
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* content */
 
+/*dimensionamento e modifiche Wrapper*/
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -32,6 +37,7 @@ body {
     color: var(--white);
 }
 
+/*dimensionamento e modifiche main*/
 main{
     width: 100%;
     height: calc(100% - 90px);
@@ -39,12 +45,14 @@ main{
     overflow: hidden;
 }
 
+/*dimensionamento e modifiche playbar*/
 #playbar {
     width: 100%;
     height: 90px;
     background-color: var(--dark-grey);
 }
 
+/*dimensionamento e modifiche main-nav*/
 .main-nav {
     width: 210px;
     min-height: 480px;
@@ -52,18 +60,21 @@ main{
     overflow: hidden;
 }
 
+/*dimensionamento e modifiche top-nav della main-nav*/
 .top-nav {
     width: 100%;
     height: calc(100% - 80px);
     overflow: hidden;
 }
 
+/*dimensionamento e modifiche bottom-nav della main-nav*/
 .bottom-nav {
     width: 100%;
     height: 80px;
    
 }
 
+/*dimensionamento e modifiche main-content*/
 .main-content {
     width: calc(100% - 210px);
     height: 100%;
@@ -71,6 +82,7 @@ main{
     overflow-y: auto;
 }
 
+/*dimensionamento e modifiche #upgrade*/
 #upgrade {
     position: fixed;
     top: 0;
@@ -82,6 +94,7 @@ main{
     z-index: 1000;
 }
 
+/*dimensionamento e modifiche generali bottone*/
 .btn {
     padding: 5px 25px;
     display: inline-block;
@@ -92,40 +105,49 @@ main{
     margin-right: 20px;
 }
 
+/*Trasform Scale del bottone e deella parte centrale della playbar*/
 .scale {
     transform: scale(0.8);
     transition: trasform 0.5s;
 }
 
+/*Hover delle sezione con classe "scale"*/
 .scale:hover {
     transform: scale(1);
 }
 
+/*display flex*/
 .flex {
     display: flex;
 }
+
+/*content flec-end*/
 
 .end {
     justify-content: flex-end;
 }
 
+/*content space-between*/
 .space-between {
     justify-content: space-between;
 }
 
+/*content wrap*/
 .wrap {
     flex-wrap: wrap;
 }
 
+/*content align-items*/
 .align-items {
     align-items: center;
 }
 
+/*content just-center*/
 .just-center {
     justify-content: center;
     
 }
-
+ /*content align-content center*/
 .align-content {
     align-content: center; 
 }
@@ -134,14 +156,17 @@ main{
     align-content: center;
 }
 
+/*Uppercase text*/
 .up-text {
     text-transform: uppercase;
 }
 
+/*margin-top 80px main-section*/
 .main-section {
     margin-top: 80px;
 }
 
+/*modifiche testo della lista nella main-section*/
 .main-section ul li {
     list-style: none;
     padding: 5px;
@@ -149,6 +174,7 @@ main{
 
 }
 
+/*modifiche link contenuti nella lista della main-section*/
 .main-section ul a {
     text-decoration: none;
     color: var(--grey);
@@ -157,6 +183,7 @@ main{
     display: block;
 }
 
+/*hover della lista nella main section per la creazione del piccolo bordo verde sono il testo*/
 .main-section ul li::after {
     content: '';
     display: block;
@@ -165,58 +192,68 @@ main{
     margin: 0 auto;
     background-color: transparent;
 }
-
+ /*colorazione piccolo bordo hover della lista nella main-section*/
 .main-section ul li:hover::after {
     background-color: var(--highlight);
 }
 
+/*hover di cambio colore del testo di tutte le liste nel documento*/
 ul li a:hover {
     color:#ffffff;
 }
 
+/*hover dei link nella top nav per la creazione del piccolo bordo verde a sinistra il testo*/
 .top-nav a {
     border-left: 2px transparent;
     
 }
 
+/*colorazione piccolo bordo hover della lista top-nav della main-section*/
 .top-nav a:hover {
     border-left: 5px solid var(--highlight);
 }
 
-
+/*modifiche posizionamento dei container*/
 .container {
     
     padding: 0 10px;
     margin-top: 20px;
 }
+
+/*modifica posizionamento row*/
 .row {
   margin-left: -10px;  
   margin-right: -10px;
   
 }
-
+/*padding-let della main list*/
 .main-list {
     padding-left: 20px;
 }
 
+/*dimensionamento e posizionamento sezioni class "col"*/
 .col {
     margin-top: 15px;
     padding: 7px;
     width:calc(100% / 6);
 }
 
+/*dimensionamento e display block immagini dentro le sezioni "col"*/
 .col img {
     width: 100%;
     display: block;
 }
-
+ /*accentramento dei testi con classe "text-c"*/
 .text-c {
     text-align: center;
 }
+
+/*margin-top di 10px*/
 .marg-top {
     margin-top: 10px;
 }
 
+/*dimensionamento, posizionamento e modifica colore di tutti i paragrafi contenuti nel documento*/
 p {
     font-size:12px;
     font-weight: 700;
@@ -224,21 +261,26 @@ p {
     color: var(--grey);
 }
 
+/*border-radius e overflow delle senzioni class "box"*/
 .box {
    
     border-radius: 50%;
     overflow: hidden;
 }
 
+/*dimensionamento immagini contenute nelle sezioni class "box"*/
 .box img {
     width: 100%;
    
 }
+
+/*hove immagini contenute nelle sezioni class "box" + position relative*/
 .hover-img {
     position: relative;
     cursor: pointer;
 }
 
+/*hove e after delle immagini contenute nelle sezioni class "box" per creare l'immagine con il simbolo play quando passo il mouse sopra*/
 .hover-img::after {
     font-family: 'Font Awesome 6 Free';
     font-size: 3rem;
@@ -255,59 +297,68 @@ p {
     height: 100%;
     transition: opacity 1s;
 }
-
+ /*hove della regola sopra per rendere visibile il simbolo play quando il mouse pasa sopra le immagini*/
 .hover-img:hover::after {
     opacity: 1;
 }
 
+/*posizionamento logo1 della top-nav*/
 .logo1 {
     padding: 15px;
     margin-right: 40px;
 }
 
+/*display none del logo 2 della top-nav*/
 .logo2 {
     display: none;
 }
 
+/*dimensionamento immagine class "img1" nella lista della main-list*/
 .img1 {
     width: 15px;
     height: 15px;
 }
-
+ /*modifica posionamento e testo h5 della main-list*/
 .t-list {
     margin-top: 20px;
     text-transform: uppercase;
 }
 
+/*modifica lista e diimensionamento testo*/
 .main-list ul li {
     list-style: none;
     padding-top: 10px;
     font-size:15px;
 }
 
+/*modifica dei link contenuti nella lista della main list*/
 .main-list li a {
     text-decoration: none;
     color: var(--grey);
 }
+
+/*modifica posizionamento e dimensionamento paragrafi all'interno della main-list*/
 .playlist li p {
 
     font-size: 15px;
     margin-left: 10px;
    padding-top: 13px;
-    
-  
-   
 }
+
+/*modifica dimensione first child della lista nella main-list*/
 .playlist li:first-child {
    font-size: 50px;
  }
 
+ /*modifica dimensionamento e posizionamento prima immagine della bottom-nav della main-list*/
  .bottom-nav img:first-child {
     width: 20px;
     height: 20px;
     margin-top: 6px;
     margin-right: 10px;
 }
+
+/*modifica dimensionamento, posizionamentp e sfongo img class "img-grey" contenuta nella bottom-list*/
 .img-grey {
     width: 20px;
     height: 20px;
@@ -315,18 +366,20 @@ p {
     background-color: var(--grey);
 }
 
-
+/*modifiche di padding*/
 .pad-15 {
     padding-left: 4px;
     padding-top: 15px;
 }
 
+/*modifiche padding*/
 .pad-10 {
     padding-left: 16px;
     padding-top: 7px;
 
 }
 
+/* creazione e dimensionamento linea grigia bottom-list*/
 .bord-bot {
     border-bottom: 1px solid var(--grey);
     margin-left: 15px;
@@ -335,11 +388,13 @@ p {
  
 }
 
+/*modifica margin sinistro di tutti i paragrafi contenuti nella lista della bottom-nav*/
 .bottom-nav ul li p {
     margin-left: 5px;
     
 }
 
+/*dimensionamento e overflow sezioni destra e sinistra della playbar*/
 .play-left, .play-right {
     width: 210px ;
     height: 100%;
@@ -347,16 +402,19 @@ p {
    
 }
 
+/*dimensionamento sezione centrale playbar*/
 .play-middle {
     width: calc(100% - 420px);
     height: 100%;
     overflow: hidden;
     
 }
-
+ /*modifica lista sezione centrale playbar*/
 .play-middle ul {
     list-style: none;
 }
+
+/*modifiche link contenunti nella lista della parte parte centrale della playbar*/
 .play-middle ul li a {
     text-decoration: none;
     color: var(--white);
@@ -365,52 +423,63 @@ p {
 }
 
 
-
+/*dimensionamento sezioni contenute nella sezione sinistra della playbar*/
 .col-play {
     width: calc(100% / 3);
     height: 100%;
     padding: 20px 10px;
 }
+
+/*dimensionamento immagine contenuta nella sezione sinistra della playbar*/
 .col-play img {
     width: 100%;
 
 }
 
+/*modifiche posizionamento paragrafi contenuti nella sezione sinistra della playbar*/
 .col-play p {
     margin-top: 1px;
     font-size: 10px;
 
 }
-
+ /*padding left*/
 .pad-l {
     padding-left: 15px;
 }
 
+/*padding left del testo a destra dell'input "range" nella sezione centrale della playbar*/
 .pad-mmax {
     padding-left: 15px;
     
 }
+
+/*padding right del testo a sinistra dell'input "range" nella sezione centrale della playbar*/
 .pad-mmin {
     padding-right: 15px;
     
 }
+
+/*padding bottom di 20px*/
 .pad-bott {
     padding-bottom: 20px;
 }
 
-
+/*margin top di 15 px*/
 .marg-15 {
     margin-top: 15px;
 }
 
+/*margin top di 2o px*/
 .marg-20 {
     margin-top: 20px;
 }
 
+/*margin top di 40 px*/
 .marg-40 {
     margin-top: 40px;
 }
 
+/*margin top di 45 px*/
 .marg-45 {
     margin-top: 45px;
     width: 80%;
@@ -420,11 +489,12 @@ p {
     font-size: 30px;
 }
 
+/*padding top dei link contenuti nella lista della sezione centrale della playbar*/
 .pad-play {
     padding-top: 10px;
 }
 
-
+ /*modifiche della input:"range"*/
 input  {
     -webkit-appearance: none;
     appearance: none;
@@ -439,7 +509,7 @@ input  {
 
 }
 
-
+/*modifiche webkit della input:"range"*/
 input::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
@@ -451,6 +521,7 @@ input::-webkit-slider-thumb{
     opacity: 0;
 }
 
+/*hover della input:"range"*/
 input:hover {
     background-image: linear-gradient(var(--highlight), var(--highlight));
 }
@@ -462,6 +533,8 @@ input::-webkit-slider-thumb:hover {
 
 /*RESPONSIVE*/
 
+/*modifiche responsive sezioni class "col" su schermi a 1200px */
+
 @media screen and (max-width: 1200px) {
 
     .col {
@@ -470,6 +543,7 @@ input::-webkit-slider-thumb:hover {
     
 }
 
+/*modifiche responsive sezioni class "col" su schermi a 9920px */
 @media screen and (max-width: 992px) {
 
     .col {
@@ -477,7 +551,7 @@ input::-webkit-slider-thumb:hover {
     }
     
 }
-
+ /*modifiche responsive sezioni class "col" su schermi a 768px */
 @media screen and (max-width: 768px) {
     
     .col {
@@ -485,26 +559,31 @@ input::-webkit-slider-thumb:hover {
     }
 }
 
+/*modifiche responsive su schermi a 576px */
 @media screen and (max-width: 576px) {
-
+     
+    /*modifica dimensionamento main-nav a 60px*/
     .main-nav {
         width: 60px;
     }
-
+     /*modifia dimensionamento div con id "update"*/
     #upgrade {
         width: calc(100% - 60px);
        
         
     }
-
+    
+     /*modifia dimensionamento main-content*/
     .main-content {
         width: calc(100% - 60px);
     }
     
+     /*display none di tutti i span contenuti nella main-nav*/
     .main-nav span {
         display: none;
     }
-
+     
+     /*comparsa e dimensionamento logo2*/
     .logo2 {
         display: block;
         width: 25px;
@@ -513,52 +592,69 @@ input::-webkit-slider-thumb:hover {
         
 
     }
+
+     /*display none logo principale"*/
     .logo1 {
         display: none;
     }
+     /*modifia dimensionamento e padding della lista contenuta nella main-list*/
     .main-list ul li {
         padding-top: 5px;
         font-size: 20px;
         
         
     }
-
+    
+     /*display none h5 e di tutti i paragrafi nella main-nav*/
     .bottom-nav  .flex h5, .main-nav p {
         display: none;
     }
-
+     
+     /*display none della linea grigia nella bottom-nav"*/
     .bord-bot {
         border: none;
     }
-
+    
+     /*margin bottome della lista contenuta nela main-list"*/
     .main-list ul {
         margin-bottom: 10px;
         
     }
+
+     /*dimensionamento immagine con classe "img1""*/
     .img1 {
         width: 20px;
         height: 20px;
     }
+
+     /*display none sezione class "playlist"*/
     .playlist {
         display: none;
     }
+
+     /*display none parte destra della playbar"*/
     .play-right {
         display: none;
     }
+
+     /*modifia dimensionamento parte centrale della playbar*/
     .play-middle { 
         width: calc(100% - 210px);
         overflow: hidden;
     }
+
+     /*modifia dimensionamento parte sinistra della playbar*/
     .play-left {
         width: 210px;
         height: 100%;
     }
+     /*modifia dimensionamento sezioni contenute nella parte sinistra della playbar*/
     .col-play {
         width: calc(100% / 3);
         height: 100%;
     }
 }
-
+  /*modifia  responsive dimensionamento sezioni class col con schermi a 400px*/
 @media screen and (max-width: 400px) {
 
     .col {
